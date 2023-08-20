@@ -1,3 +1,6 @@
+### This project was created with the following Youtube tutorial
+[Youtube Tutorial](https://www.youtube.com/watch?v=bmpI252DmiI&t=1085s)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
