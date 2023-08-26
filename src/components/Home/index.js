@@ -11,7 +11,7 @@ const Home = () => {
   const jobArray = "web developer.".split('')
 
   useInsertionEffect(() => {
-    return setTimeout(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
   }, [])
