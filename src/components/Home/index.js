@@ -7,8 +7,8 @@ import Logo from './Logo';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = "than".split('')
-  const jobArray = "web developer.".split('')
+  const nameArray = "than,".split('')
+  const jobArray = "Web Developer.".split('')
 
   useInsertionEffect(() => {
     setTimeout(() => {

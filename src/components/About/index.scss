@@ -1,68 +1,32 @@
 .about-page {
-    $gap : 4vh;
-    $padding : 4vh;
-    $color : #48CAE4;
+  margin: 80px 0px 80px 60px;
 
-    $bp : (
-        mobile : 480px,
-        tablet : 768px,
-        desktop : 1440px,
-    );
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+  }
 
-    @mixin query($display){
-        @each $key, $value in $bp{
-          
-          //  defining max-width
-          @if ($display == $key){
-            @media (max-width: $value){@content;}
-          }
-        }
-      }
+  input {
+    color: #ffd700;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    margin-top: 25px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
 
-    height: 100%;
-    padding: 100px 60px;
-    margin: 0px;
-
-    .flex-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-
-        input {
-            display: flex;
-            color: #ffd700;
-            background: transparent;
-            font-size: 30px;
-            font-weight: 400;
-            letter-spacing: 4px;
-            font-family: sans-serif;
-            text-decoration: none;
-            padding: 10px 18px;
-            border: 1px solid #ffd700;
-            float: left;
-            animation: fadeIn 1s 0.5s backwards;
-            white-space: nowrap;
-            cursor: pointer;
-
-            //To lay the boxes in a row.
-            display: flex;
-            flex-direction: row;
-          
-          //Removing border(1vh+1vh), gap, & padding from the height
-          // And then equally distributing spaces between the 
-          // .block-* classes by dividing it by 3
-            gap: $gap;
-          
-            @include query (mobile){
-              flex-direction: column;
-            }
-            
-
-            &:hover {
-                background: #ffd700;
-                color: #333;
-            }
-        }   
+    &:hover {
+      background: #ffd700;
+      color: #333;
     }
+  }
 }
