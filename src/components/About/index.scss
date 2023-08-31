@@ -49,5 +49,11 @@
     }
     
   }
+  
+  .selection-button.active {
+    /* Styles for the active button */
+    background-color: #ffd700; /* Change the background color to indicate it's active */
+    color: #fff; /* Change the text color for better contrast */
+    transition: background-color 0.3s, color 0.3s;
   }
 }
