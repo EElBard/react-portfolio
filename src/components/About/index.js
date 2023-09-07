@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import EventLighting from './Event Lighting';
 import './index.scss';
+import Loader from 'react-loaders';
 
 const About = () => {
   const [activeButton, setActiveButton] = useState(null);
@@ -10,6 +11,7 @@ const About = () => {
   };
 
   return (
+    <>
     <div className='about-page'>
       <div className='section-select flex-container'>
         <input
@@ -36,6 +38,8 @@ const About = () => {
       </div>
       <EventLighting />
     </div>
+    <Loader type='pacman' />
+    </>
   );
 };
 
