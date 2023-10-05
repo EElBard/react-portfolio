@@ -9,7 +9,6 @@ const Logo = () => {
 
   return (
     <div className='logo-container' ref={bgRef}>
-      <img ref={solidLogoRef} className="solid-logo" src={LogoE} alt="E"/>
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg" 
       width="500.000000pt" 
       height="500.000000pt" 

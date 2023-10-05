@@ -1,31 +1,14 @@
 .logo-container {
-    flex: 1; /* Let the logo container grow and take available space */
+    flex: 1;
     display: flex;
-    flex-direction: column; /* Arrange children vertically, you can change this if needed */
+    flex-direction: column;
 
     svg {
-        width: 100%;
+        width: 50%;
         height: auto;
         bottom: 0;
         transform: rotateZ(30deg) !important;
-    }
-
-    .solid-logo {
-        flex: 1; /* Let it take available vertical space */
-        width: 100%;
-        height: auto;
-        opacity: 0;
-        transform: rotateZ(30deg);
-        z-index: 1;
-
-        animation: fadeIn 1s ease-in-out forwards;
-        animation-delay: 10s;
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1; 
-            }
-        }
+        margin-left: auto;
     }
 
     .svg-container {
@@ -36,7 +19,7 @@
     .outline-logo {
         stroke-dasharray: 3300;
         stroke-dashoffset: 3300;
-        animation: drawOutline 10s ease-in-out forwards, fadeOut 1s ease-in-out forwards 10s;
+        animation: drawOutline 10s ease-in-out alternate infinite;
 
         @keyframes drawOutline {
             to {
