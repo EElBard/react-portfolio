@@ -1,11 +1,9 @@
 import './index.scss';
-import LogoE from '../../../assets/images/logo-e.png'
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 
 const Logo = () => {
   const bgRef = useRef();
   const outlineLogoRef = useRef();
-  const solidLogoRef = useRef();
 
   return (
     <div className='logo-container' ref={bgRef}>
