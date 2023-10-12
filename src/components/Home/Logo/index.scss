@@ -19,7 +19,7 @@
     .outline-logo {
         stroke-dasharray: 3300;
         stroke-dashoffset: 3300;
-        animation:  fadeIn 2s ease-in 10s, drawOutline 10s ease-in-out alternate infinite;
+        animation:  drawOutline 10s ease-in-out alternate infinite;
 
         @keyframes drawOutline {
             to {

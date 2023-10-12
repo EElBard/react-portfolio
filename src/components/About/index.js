@@ -9,8 +9,7 @@ const About = () => {
 
   const buttons = [
     { label: 'Event Lighting', value: 'Event Lighting' },
-    { label: 'Web Development', value: 'Web Development' },
-    { label: 'Video Editing', value: 'Video Editing' },
+    { label: 'Web Development', value: 'Web Development' }
   ];
 
   const handleButtonClick = (value) => {
@@ -21,8 +20,8 @@ const About = () => {
     switch (activeButton) {
       case 'Event Lighting':
         return <EventLighting />;
-      /*case 'Web Development':
-        return <WebDevelopment />;*/
+      case 'Web Development':
+        return <WebDevelopment />;
       default:
         return null;
     }
