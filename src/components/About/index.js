@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import EventLighting from './Event Lighting';
-//import WebDevelopment from './Web Development'; // Import other components as needed
-//import VideoEditing from './Video Editing'; // Import other components as needed
+import WebDevelopment from './Web Development';
 import './index.scss';
 import Loader from 'react-loaders';
 
@@ -18,15 +17,12 @@ const About = () => {
     setActiveButton(value);
   };
 
-  // Render different components based on the selected button
   const renderSelectedComponent = () => {
     switch (activeButton) {
       case 'Event Lighting':
         return <EventLighting />;
       /*case 'Web Development':
-        return <WebDevelopment />;
-      case 'Video Editing':
-        return <VideoEditing />;*/
+        return <WebDevelopment />;*/
       default:
         return null;
     }
