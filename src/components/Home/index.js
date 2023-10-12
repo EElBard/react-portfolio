@@ -9,7 +9,7 @@ import Loader from 'react-loaders';
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = "than,".split('')
-  const jobArray = "Web Developer.".split('')
+  const jobArray = "Full-Stack Developer.".split('')
 
   useInsertionEffect(() => {
     setTimeout(() => {
@@ -37,7 +37,7 @@ const Home = () => {
         strArray={jobArray}
         idx={21} />
         </h1>
-        <h2>Frontend Developer / Lighting Designer / Video Editor</h2>
+        <h2>Full-Stack Developer / Lighting Designer</h2>
         <Link to="/contact" className='flat-button'>CONTACT ME</Link>
       </div>
       <Logo />
