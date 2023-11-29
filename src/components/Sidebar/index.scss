@@ -83,12 +83,6 @@
             }
         }
 
-        a.contact-link {
-            &:after {
-                content: 'CONTACT';
-            }
-        }
-
         a.active {
             svg {
                 color: #ffd700;
